@@ -1,0 +1,36 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "authors": [
+    "Nick Nisi <nick@nisi.org>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "dojo",
+    "dijit",
+    "dojox",
+    "dgrid",
+    "put-selector",
+    "xstyle"
+  ],
+  "license": "BSD",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dojo": "~1.10.0",
+    "dijit": "~1.10.0",
+    "dojox": "~1.10.0",
+    "put-selector": "~0.3.5",
+    "xstyle": "~0.2.1",
+    "dgrid": "~0.3.15",
+    "dojo-smore": "https://github.com/kfranqueiro/dojo-smore.git"
+  }
+}
