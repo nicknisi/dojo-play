@@ -12,7 +12,7 @@ var dojoConfig = {
 		{ name: 'xstyle', location: 'bower_components/xstyle' },
 		{ name: 'dgrid', location: 'bower_components/dgrid' },
 		{ name: 'dojo-smore', location: 'bower_components/dojo-smore' },
-		'playground',
-		'util' // our sample application package
+		'play',
+		'playground'
 	]
 };
