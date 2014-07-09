@@ -7,13 +7,13 @@ require([
 	var params = util.getParams(),
 		dfd = new Deferred(),
 		promise = dfd.promise,
-		template = params.template ? params.template : 'default.html';
+		template = params.template ? 'playground/templates/' + params.template : 'play/templates/default.html';
 
 	require([
 		'dojo/dom-construct',
-		'dojo/text!playground/templates/' + template
+		'dojo/text!' + template
 	], function (domConstruct, templateString) {
-		console.info('loading template: playground/templates/' + template);
+		console.info('loading template: ' + template);
 		var node = domConstruct.toDom(templateString);
 		document.getElementById('main').appendChild(node);
 		dfd.resolve();
