@@ -15,7 +15,7 @@ require([
 	], function (domConstruct, templateString) {
 		console.info('loading template: ' + template);
 		var node = domConstruct.toDom(templateString);
-		document.getElementById('main').appendChild(node);
+		document.getElementById('play-main').appendChild(node);
 		dfd.resolve();
 	});
 
