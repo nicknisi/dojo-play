@@ -7,7 +7,9 @@ require([
 	var params = util.getParams(),
 		dfd = new Deferred(),
 		promise = dfd.promise,
-		template = params.template ? 'playground/templates/' + params.template : 'play/templates/default.html';
+		deps = params.deps ? array.map(params.deps.split(','), function (dep) { return 'playground/' + dep; }) : [],
+		template = params.template ? 'playground/templates/' + params.template
+			: deps.length ? 'playground/templates/default.html' : 'play/templates/default.html';
 
 	require([
 		'dojo/dom-construct',
@@ -21,10 +23,6 @@ require([
 
 	if (params.deps) {
 		promise.then(function () {
-			var deps = array.map(params.deps.split(','), function (dep) {
-				console.info('loading source: playground/' + dep);
-				return 'playground/' + dep;
-			});
 			require(deps);
 		});
 	}
