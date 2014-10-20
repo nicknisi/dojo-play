@@ -3,7 +3,7 @@ var dojoConfig = {
 	async: true,
 	isDebug: true,
 	tlmSiblingOfDojo: false,
-	baseUrl: '/src',
+	baseUrl: 'src',
 	packages: [
 		{ name: 'dojo', location: 'bower_components/dojo' },
 		{ name: 'dijit', location: 'bower_components/dijit' },
