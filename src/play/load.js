@@ -23,10 +23,17 @@ require([
 
 	require([
 		'dojo/dom-construct',
-		'dojo/text!' + template
-	], function (domConstruct, templateString) {
+		'dojo/text!' + template,
+		'dojo/parser'
+	], function (domConstruct, templateString, parser) {
 		var node = domConstruct.toDom(templateString);
-		document.getElementById('play-main').appendChild(node);
+		var mainNode = document.getElementById('play-main');
+		mainNode.getElementById('play-main').appendChild(node);
+		if (!deps.length) {
+			// if there is only a template, parse it for declarative widgets
+			parser.parse(mainNode);
+		}
+
 		dfd.resolve();
 	});
 
