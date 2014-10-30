@@ -28,7 +28,7 @@ require([
 	], function (domConstruct, templateString, parser) {
 		var node = domConstruct.toDom(templateString);
 		var mainNode = document.getElementById('play-main');
-		mainNode.getElementById('play-main').appendChild(node);
+		document.getElementById('play-main').appendChild(node);
 		if (!deps.length) {
 			// if there is only a template, parse it for declarative widgets
 			parser.parse(mainNode);
