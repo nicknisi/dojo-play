@@ -11,6 +11,8 @@ var dojoConfig = {
 		{ name: 'put-selector', location: 'bower_components/put-selector' },
 		{ name: 'xstyle', location: 'bower_components/xstyle' },
 		{ name: 'dgrid', location: 'bower_components/dgrid' },
+		{ name: 'dstore', location: 'bower_components/dstore' },
+		{ name: 'dmodel', location: 'bower_components/dmodel' },
 		{ name: 'dojo-smore', location: 'bower_components/dojo-smore' },
 		'play',
 		'playground'
