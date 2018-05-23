@@ -3,18 +3,18 @@ var dojoConfig = {
 	async: true,
 	isDebug: true,
 	tlmSiblingOfDojo: false,
-	baseUrl: 'src',
+	baseUrl: '.',
 	packages: [
-		{ name: 'dojo', location: 'bower_components/dojo' },
-		{ name: 'dijit', location: 'bower_components/dijit' },
-		{ name: 'dojox', location: 'bower_components/dojox' },
-		{ name: 'put-selector', location: 'bower_components/put-selector' },
-		{ name: 'xstyle', location: 'bower_components/xstyle' },
-		{ name: 'dgrid', location: 'bower_components/dgrid' },
-		{ name: 'dstore', location: 'bower_components/dstore' },
-		{ name: 'dmodel', location: 'bower_components/dmodel' },
-		{ name: 'dojo-smore', location: 'bower_components/dojo-smore' },
-		'play',
-		'playground'
+		{ name: 'dojo', location: 'dojo' },
+		{ name: 'dijit', location: 'dijit' },
+		{ name: 'dojox', location: 'dojox' },
+		{ name: 'put-selector', location: 'put-selector' },
+		{ name: 'xstyle', location: 'xstyle' },
+		{ name: 'dgrid', location: 'dgrid' },
+		{ name: 'dstore', location: 'dstore' },
+		{ name: 'dmodel', location: 'dmodel' },
+		{ name: 'dojo-smore', location: 'dojo-smore' },
+		{ name: 'play', location: 'src/play' },
+		{ name:'playground', location: 'src/playground' }
 	]
 };

@@ -1,0 +1,27 @@
+[submodule "dojo"]
+	path = dojo
+	url = git@github.com:dojo/dojo.git
+[submodule "dijit"]
+	path = dijit
+	url = git@github.com:dojo/dijit.git
+[submodule "dgrid"]
+	path = dgrid
+	url = git@github.com:SitePen/dgrid.git
+[submodule "put-selector"]
+	path = put-selector
+	url = git@github.com:kriszyp/put-selector.git
+[submodule "dojox"]
+	path = dojox
+	url = git@github.com:dojo/dojox.git
+[submodule "dstore"]
+	path = dstore
+	url = git@github.com:SitePen/dstore.git
+[submodule "xstyle"]
+	path = xstyle
+	url = git@github.com:kriszyp/xstyle.git
+[submodule "dmodel"]
+	path = dmodel
+	url = git@github.com:SitePen/dmodel.git
+[submodule "dojo-smore"]
+	path = dojo-smore
+	url = git@github.com:kfranqueiro/dojo-smore.git

@@ -1,13 +1,12 @@
 define([
-	'exports',
-	'dojo/_base/array'
-], function (exports, array) {
-
+	'exports'
+], function (exports) {
 	// return query parameters
-	exports.getParams = function () {
+	exports.getParams = () => {
 		var params = {};
-		array.forEach(window.location.search.substr(1).split('&'), function(item) {
-			params[item.split('=')[0]] = item.split('=')[1];
+		window.location.search.substr(1).split('&').forEach(item => {
+			const [key, value] = item.split('=');
+			params[key] = value;
 		});
 		return params;
 	};
